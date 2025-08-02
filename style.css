@@ -96,3 +96,18 @@ a.instagram-link:hover {
         padding: 20px;
     }
 }
+
+.back-button {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background-color: #777;
+}
