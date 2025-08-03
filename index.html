@@ -2,113 +2,108 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iqsa | Home</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <!-- Instagram & Social Media Preview -->
-    <meta property="og:title" content="Iqsa - BCA Guidance">
-    <meta property="og:description"
-        content="Get project notes, code, and helpful resources for BCA students. Curated by Sufiyan.">
-    <meta property="og:image" content="https://sufiiynn.github.io/iqsaa/favicon.ico">
-    <meta property="og:url" content="https://sufiiynn.github.io/iqsaa/">
-    <meta name="twitter:card" content="summary">
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Iqsa - BCA Final Year Project Website by Sufiyan">
-    <meta name="keywords" content="Iqsa, BCA, Final Year, Project, Notes, Guidance, sufiiyn, GitHub Pages">
+    <title>Iqsa | BCA Project Guidance</title>
+    <meta name="description"
+        content="Iqsa - A one-stop website for BCA students. Get resources, guidance, project ideas, and more.">
+    <meta name="keywords" content="BCA, Iqsa, project, guidance, notes, code, tutorials, sufiiyn">
     <meta name="author" content="Mohammed Sufiyan">
 
-    <!-- Open Graph (Social Media) -->
-    <meta property="og:title" content="Iqsa - BCA Final Year Project Website">
-    <meta property="og:description" content="Created by Sufiyan (Insta: @sufiiyn)">
-    <meta property="og:image" content="https://sufiiynn.github.io/iqsaa/assets/preview.jpg">
-    <meta property="og:url" content="https://sufiiynn.github.io/iqsaa">
-    <meta name="twitter:card" content="summary_large_image">
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="Iqsa - BCA Student Guidance Portal">
+    <meta property="og:description" content="Explore guides, notes, and project ideas tailored for BCA students.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sufiiynn.github.io/iqsaa/">
+    <meta property="og:image" content="https://sufiiynn.github.io/iqsaa/assets/preview.jpg"> <!-- optional image -->
+
     <!-- Favicon -->
-    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
-    <!-- Social Share Preview Image -->
-    <meta property="og:image" content="assets/preview.jpg">
-    <meta property="og:title" content="Iqsa - BCA Guidance">
-    <meta property="og:description" content="Your one-stop destination for BCA notes, guidance, and projects.">
-    <meta name="twitter:card" content="summary_large_image">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- Favicon (optional) -->
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header>
-        <nav class="navbar">
-            <h1 class="logo">📘 Iqsa BCA Project</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="https://instagram.com/sufiiyn" target="_blank">Contact</a></li>
-            </ul>
+        <h1 class="fade-in">Iqsa</h1>
+        <p class="tagline fade-in">Your BCA Guide – Learn, Build, Succeed</p>
+        <nav class="fade-in">
+            <a href="index.html" class="active">Home</a>
+            <a href="notes.html">Notes</a>
+            <a href="projects.html">Projects</a>
+            <a href="videos.html">Videos</a>
+            <a href="about.html">About</a>
         </nav>
     </header>
 
-
-    <main>
-        <section class="intro">
-            <h2>Your BCA Final Year Project Guide</h2>
-            <p>This website is created to help BCA students with their final year projects, notes, videos, and guidance
-                – all in one place!</p>
+    <main class="container">
+        <section class="card fade-in">
+            <h2>Welcome to Iqsa</h2>
+            <p>This is your personalized website for BCA guidance. Whether you're looking for semester notes, final year
+                project help, or tutorial videos – you're in the right place.</p>
         </section>
 
-        <section class="features">
-            <h3>What You’ll Find Here:</h3>
+        <section class="card fade-in">
+            <h3>🔥 Trending Project Topics</h3>
             <ul>
-                <li>✅ Clear subject-wise notes</li>
-                <li>🎥 Easy-to-understand YouTube tutorials</li>
-                <li>📘 Exam tips and important questions</li>
-                <li>💡 Ideas for final year projects</li>
+                <li>Student Attendance Management System using Python</li>
+                <li>Online Voting System using PHP & MySQL</li>
+                <li>Weather App using API and JavaScript</li>
+                <li>AI Image Generator using Colab + HTML</li>
             </ul>
+            <a href="projects.html">Explore More Projects →</a>
         </section>
 
-        <section class="about">
-            <h3>About the Creator</h3>
-            <p>Designed and developed by <strong>Mohammed Sufiyan</strong> – a passionate BCA student who wants to help
-                others succeed.</p>
-            <p>Follow me on Instagram: <a href="https://instagram.com/sufiiyn" target="_blank">@sufiiyn</a></p>
+        <section class="card fade-in">
+            <h3>📹 YouTube Tutorials</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/WtWlCRZQBnw" title="BCA Project Guide"
+                allowfullscreen></iframe>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Iqsa Project. All rights reserved.</p>
-            <p>Designed by <a href="https://instagram.com/sufiiyn" target="_blank">@sufiiyn</a></p>
-        </div>
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+
+    <footer class="fade-in">
+        <p>Made with ❤️ by <a href="https://instagram.com/sufiiyn" target="_blank">@sufiiyn</a></p>
+        <p>&copy; 2025 Iqsa Project | All rights reserved.</p>
     </footer>
 
-    <!-- Scroll-to-Top Button -->
-    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">⬆️</button>
     <script>
-        let mybutton = document.getElementById("topBtn");
-
+        // Scroll to Top Button
+        const scrollBtn = document.getElementById("scrollTopBtn");
         window.onscroll = function () {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                mybutton.style.display = "block";
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollBtn.style.display = "block";
             } else {
-                mybutton.style.display = "none";
+                scrollBtn.style.display = "none";
             }
         };
-
-        function topFunction() {
+        function scrollToTop() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-    </script>
-    <!-- AOS Script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
+
+        // Fade-In Animation on Scroll
+        const faders = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        faders.forEach(el => observer.observe(el));
     </script>
 
 </body>
