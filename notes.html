@@ -4,96 +4,74 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notes | Iqsaa</title>
+    <meta name="description"
+        content="Free downloadable BCA notes for all semesters – Created by Mohammed Sufiyan for Iqsa Project" />
+    <meta name="author" content="Mohammed Sufiyan" />
+    <link rel="icon" href="favicon.png" />
+    <title>Notes | Iqsa – BCA Guidance</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Iqsa - BCA Final Year Project Website by Sufiyan">
-    <meta name="keywords" content="Iqsa, BCA, Final Year, Project, Notes, Guidance, sufiiyn, GitHub Pages">
-    <meta name="author" content="Mohammed Sufiyan">
-
-    <!-- Open Graph (Social Media) -->
-    <meta property="og:title" content="Iqsa - BCA Final Year Project Website">
-    <meta property="og:description" content="Created by Sufiyan (Insta: @sufiiyn)">
-    <meta property="og:image" content="https://sufiiynn.github.io/iqsaa/assets/preview.jpg">
-    <meta property="og:url" content="https://sufiiynn.github.io/iqsaa">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Favicon (optional) -->
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 
 <body>
     <header>
-        <h1>Iqsaa</h1>
-        <p class="tagline">BCA Final Year Project</p>
+        <img src="favicon.png" alt="Iqsa Logo" class="logo" />
+        <h1 class="main-title">Iqsa - BCA Notes</h1>
+        <p class="tagline">Helping BCA students with guidance and success</p>
         <nav>
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
-            <a href="about.html">About</a>
             <a href="notes.html" class="active">Notes</a>
+            <a href="about.html">About</a>
         </nav>
     </header>
 
-    <main class="container">
-        <h2>📚 Project Notes & Resources</h2>
+    <main>
+        <section class="notes-section">
+            <h2>📚 Download BCA Notes</h2>
+            <p>Semester-wise handwritten and PDF notes to boost your exam preparation.</p>
 
-        <section class="card">
-            <h3>📝 Class Notes</h3>
-            <ul>
-                <li><a href="https://drive.google.com/YOUR-LINK-HERE" target="_blank">BCA Semester 1 Notes (PDF)</a>
-                </li>
-                <li><a href="https://drive.google.com/YOUR-LINK-HERE" target="_blank">Java Practical Programs</a></li>
-            </ul>
+            <div class="notes-card">
+                <h3>📖 Semester 1 Notes</h3>
+                <ul>
+                    <li>📄 <a href="#">Computer Fundamentals PDF</a></li>
+                    <li>📄 <a href="#">Programming in C Notes</a></li>
+                </ul>
+            </div>
 
-            <h3>📂 Project Files</h3>
-            <ul>
-                <li><a href="https://github.com/sufiiynn/iqsaa" target="_blank">GitHub Source Code</a></li>
-                <li><a href="https://colab.research.google.com/YOUR-COLAB-LINK" target="_blank">AI Image Generator Colab
-                        Notebook</a></li>
-            </ul>
+            <div class="notes-card">
+                <h3>📖 Semester 2 Notes</h3>
+                <ul>
+                    <li>📄 <a href="#">Data Structures</a></li>
+                    <li>📄 <a href="#">Discrete Mathematics</a></li>
+                </ul>
+            </div>
 
-            <h3>📺 Demo Video</h3>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR-VIDEO-ID" frameborder="0"
-                allowfullscreen></iframe>
+            <div class="notes-card">
+                <h3>📖 Semester 3 Notes</h3>
+                <ul>
+                    <li>📄 <a href="#">Object-Oriented Programming</a></li>
+                    <li>📄 <a href="#">Operating Systems</a></li>
+                </ul>
+            </div>
+
+            <div class="notes-card">
+                <h3>📖 Semester 4 Notes</h3>
+                <ul>
+                    <li>📄 <a href="#">Database Management Systems</a></li>
+                    <li>📄 <a href="#">Web Programming</a></li>
+                </ul>
+            </div>
+
+            <p class="more-coming">📌 More semesters and topics coming soon!</p>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Iqsa Project. All rights reserved.</p>
-            <p>Designed by <a href="https://instagram.com/sufiiyn" target="_blank">@sufiiyn</a></p>
-        </div>
+        <p>&copy; 2025 Iqsa | Created by Mohammed Sufiyan</p>
+        <p>Follow on Instagram: <a href="https://instagram.com/sufiiyn" target="_blank">@sufiiyn</a></p>
     </footer>
 
-    <!-- Scroll-to-Top Button -->
-    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">⬆️</button>
-    <script>
-        let mybutton = document.getElementById("topBtn");
-
-        window.onscroll = function () {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        };
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <!-- AOS Script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

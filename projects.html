@@ -4,94 +4,65 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iqsaa | My Projects</title>
+    <meta name="description"
+        content="Download useful mini and major BCA projects with source code - BCA Guidance Website by Mohammed Sufiyan" />
+    <meta name="author" content="Mohammed Sufiyan" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Projects | Iqsa – BCA Guidance</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Iqsa - BCA Final Year Project Website by Sufiyan">
-    <meta name="keywords" content="Iqsa, BCA, Final Year, Project, Notes, Guidance, sufiiyn, GitHub Pages">
-    <meta name="author" content="Mohammed Sufiyan">
-
-    <!-- Open Graph (Social Media) -->
-    <meta property="og:title" content="Iqsa - BCA Final Year Project Website">
-    <meta property="og:description" content="Created by Sufiyan (Insta: @sufiiyn)">
-    <meta property="og:image" content="https://sufiiynn.github.io/iqsaa/assets/preview.jpg">
-    <meta property="og:url" content="https://sufiiynn.github.io/iqsaa">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Favicon (optional) -->
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <img src="C:\Users\Sufiyan\Desktop\preview.jpg" alt="Iqsa Banner" style="width: 100%; border-radius: 12px;">
-
 </head>
 
 <body>
     <header>
-        <h1>Iqsaa</h1>
-        <p class="tagline">BCA Final Year Project</p>
+        <img src="favicon.png" alt="Iqsa Logo" class="logo" />
+        <h1 class="main-title">Iqsa - BCA Project Downloads</h1>
+        <p class="tagline">Helping BCA students with guidance and success</p>
         <nav>
             <a href="index.html">Home</a>
             <a href="projects.html" class="active">Projects</a>
+            <a href="notes.html">Notes</a>
             <a href="about.html">About</a>
         </nav>
     </header>
 
-    <main class="container">
-        <h2>📁 My Projects</h2>
+    <main>
+        <section class="project-section">
+            <h2>📁 Download Free BCA Projects</h2>
+            <p>Download final year mini and major projects for your BCA studies, along with documentation and source
+                code.</p>
 
-        <section class="card">
-            <h3>🖼️ AI Image Generator</h3>
-            <p>Prompts + Colab Code + Output Images</p>
-            <a href="https://colab.research.google.com/" target="_blank">Open Project</a>
-        </section>
+            <div class="project-card">
+                <h3>✔️ Student Management System</h3>
+                <p>A system to manage students, attendance, and results. Built using Java and MySQL.</p>
+                <a href="#" class="download-btn">Download Project</a>
+            </div>
 
-        <section class="card">
-            <h3>📚 Notes Downloader</h3>
-            <p>Get all BCA notes by one click!</p>
-            <a href="https://drive.google.com/" target="_blank">Download Notes</a>
-        </section>
+            <div class="project-card">
+                <h3>✔️ Online Voting System</h3>
+                <p>Web-based application using PHP and MySQL to conduct online elections securely.</p>
+                <a href="#" class="download-btn">Download Project</a>
+            </div>
 
-        <section class="card">
-            <h3>📹 Video Projects</h3>
-            <p>YouTube Links to my tutorials</p>
-            <a href="https://youtube.com/" target="_blank">Watch Videos</a>
+            <div class="project-card">
+                <h3>✔️ E-commerce Website</h3>
+                <p>A simple shopping website built with HTML, CSS, and JavaScript.</p>
+                <a href="#" class="download-btn">Download Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>✔️ Library Management System</h3>
+                <p>Desktop application using Java to manage library books, returns, and users.</p>
+                <a href="#" class="download-btn">Download Project</a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Iqsa Project. All rights reserved.</p>
-            <p>Designed by <a href="https://instagram.com/sufiiyn" target="_blank">@sufiiyn</a></p>
-        </div>
+        <p>&copy; 2025 Iqsa | Created by Mohammed Sufiyan</p>
+        <p>Follow on Instagram: <a href="https://instagram.com/sufiiyn" target="_blank">@sufiiyn</a></p>
     </footer>
 
-    <!-- Scroll-to-Top Button -->
-    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">⬆️</button>
-    <script>
-        let mybutton = document.getElementById("topBtn");
-
-        window.onscroll = function () {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        };
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <!-- AOS Script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -4,97 +4,64 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Iqsaa</title>
+    <meta name="description"
+        content="Learn about the Iqsa project – a BCA guidance website by Mohammed Sufiyan for students." />
+    <meta name="author" content="Mohammed Sufiyan" />
+    <link rel="icon" href="favicon.png" />
+    <title>About | Iqsa – BCA Guidance</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Iqsa - BCA Final Year Project Website by Sufiyan">
-    <meta name="keywords" content="Iqsa, BCA, Final Year, Project, Notes, Guidance, sufiiyn, GitHub Pages">
-    <meta name="author" content="Mohammed Sufiyan">
-
-    <!-- Open Graph (Social Media) -->
-    <meta property="og:title" content="Iqsa - BCA Final Year Project Website">
-    <meta property="og:description" content="Created by Sufiyan (Insta: @sufiiyn)">
-    <meta property="og:image" content="https://sufiiynn.github.io/iqsaa/assets/preview.jpg">
-    <meta property="og:url" content="https://sufiiynn.github.io/iqsaa">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Favicon (optional) -->
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 
 <body>
     <header>
-        <h1>Iqsaa</h1>
-        <p class="tagline">BCA Final Year Project</p>
+        <img src="favicon.png" alt="Iqsa Logo" class="logo" />
+        <h1 class="main-title">Iqsa – About Us</h1>
+        <p class="tagline">Helping BCA students with guidance and success</p>
         <nav>
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
+            <a href="notes.html">Notes</a>
             <a href="about.html" class="active">About</a>
         </nav>
     </header>
 
-    <main class="container">
-        <h2>👨‍💻 About Me</h2>
+    <main>
+        <section class="about-section">
+            <h2>🌟 About Iqsa</h2>
+            <p>
+                <strong>Iqsa</strong> is a dedicated guidance website created to support BCA (Bachelor of Computer
+                Applications) students by providing high-quality notes, useful projects, and exam preparation materials.
+                This platform is especially designed for students who want to succeed academically and professionally.
+            </p>
 
-        <section class="card">
-            <p><strong>Name:</strong> Mohammed Sufiyan</p>
-            <p><strong>Course:</strong> BCA Final Year Student</p>
-            <p><strong>College:</strong> JSS College of Arts, Commerce and Science, Mysuru</p>
-            <p><strong>Passion:</strong> creating E-invites , coding apps, AI-based tools</p>
+            <h3>👨‍💻 About the Creator</h3>
+            <p>
+                I’m <strong>Mohammed Sufiyan</strong>, a BCA student and passionate developer. I created Iqsa as a free
+                and helpful platform to assist other BCA students like myself with easy access to study materials and
+                project ideas.
+            </p>
+            <p>
+                I’m also a digital invitation designer and enjoy building useful tech tools for students and friends.
+                You can find me on Instagram at:
+                <br /><a href="https://instagram.com/sufiiyn" target="_blank">@sufiiyn</a>
+            </p>
 
-            <h3>🛠️ Skills</h3>
+            <h3>🎯 Our Goal</h3>
             <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Python, C, Java</li>
-                <li>GitHub, Google Colab</li>
-                <li>AI Tools </li>
+                <li>📌 Make learning easier for BCA students</li>
+                <li>📌 Provide free handwritten and digital notes</li>
+                <li>📌 Inspire students to build real-world projects</li>
+                <li>📌 Support students in their academic journey</li>
             </ul>
-
-            <h3>🌟 Projects</h3>
-            <p>I create projects using Google Colab, prompt-based AI image generators, note-sharing tools, and simple
-                web design using HTML and CSS.</p>
-
-            <h3>📸 Social Media</h3>
-            <p>Follow me on Instagram: <a href="https://instagram.com/sufiiyn" target="_blank">@sufiiyn</a></p>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Iqsa Project. All rights reserved.</p>
-            <p>Designed by <a href="https://instagram.com/sufiiyn" target="_blank">@sufiiyn</a></p>
-        </div>
+        <p>&copy; 2025 Iqsa | Created by Mohammed Sufiyan</p>
+        <p>Follow on Instagram: <a href="https://instagram.com/sufiiyn" target="_blank">@sufiiyn</a></p>
     </footer>
 
-    <!-- Scroll-to-Top Button -->
-    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">⬆️</button>
-    <script>
-        let mybutton = document.getElementById("topBtn");
-
-        window.onscroll = function () {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        };
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <!-- AOS Script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
