@@ -3,80 +3,98 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Notes | Iqsa</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Notes | Iqsa – BCA Guidance</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-gradient-to-r from-blue-50 to-indigo-100 text-gray-800">
+<body class="bg-gray-100 text-gray-800">
 
-    <!-- Header -->
-    <header class="text-center py-6 bg-indigo-600 text-white shadow-lg">
-        <h1 class="text-3xl font-bold">📚 Study Notes</h1>
-        <p class="mt-2">Download useful notes for JSSCACS students</p>
+    <!-- Header / Navigation -->
+    <header class="bg-indigo-600 text-white text-center py-6 shadow-md">
+        <img src="favicon.png" alt="Iqsa Logo" class="mx-auto mb-2 w-12 h-12">
+        <h1 class="text-3xl font-bold">Iqsa – BCA Notes</h1>
+        <p class="mt-1">Helping BCA students with guidance and success</p>
+        <nav class="mt-4 space-x-4">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="projects.html" class="hover:underline">Projects</a>
+            <a href="notes.html" class="font-semibold underline">Notes</a>
+            <a href="about.html" class="hover:underline">About</a>
+        </nav>
     </header>
 
-    <!-- Search -->
-    <div class="max-w-xl mx-auto mt-6">
-        <input type="text" placeholder="Search subject..."
-            class="w-full px-4 py-2 rounded-lg shadow-md border focus:ring focus:ring-indigo-300">
-    </div>
+    <!-- Notes Section -->
+    <main class="max-w-6xl mx-auto p-6">
+        <h2 class="text-2xl font-semibold mb-4">📚 Preview & Download Notes</h2>
+        <p class="mb-6">Click a card to preview notes and access additional online resources from GeeksforGeeks.</p>
 
-    <!-- Notes Grid -->
-    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-8">
-        <!-- Card Example -->
-        <div
-            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition p-6 text-center">
-            <h2 class="text-xl font-semibold mb-2">💻 Computer Fundamentals</h2>
-            <p class="text-gray-600 mb-4">Basic concepts of computer science</p>
-            <a href="notes/computer-fundamentals.pdf" target="_blank"
-                class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg shadow">Download PDF</a>
-        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Computer Fundamentals -->
+            <div class="bg-white rounded-xl shadow-lg p-5 hover:shadow-xl transition">
+                <h3 class="text-xl font-semibold mb-2">🖥 Computer Fundamentals (NEP)</h3>
+                <iframe src="https://jsscacs.edu.in/sites/default/files/Department%20Files/Computer%20Science.pdf"
+                    class="w-full h-48 mb-3 rounded-lg" loading="lazy"></iframe>
+                <div class="flex justify-center space-x-2">
+                    <a href="https://jsscacs.edu.in/sites/default/files/Department%20Files/Computer%20Science.pdf"
+                        target="_blank" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">⬇
+                        Download</a>
+                    <a href="https://www.geeksforgeeks.org/computer-science-fundamentals/computer-fundamentals-tutorial/"
+                        target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">🌐 GfG
+                        Notes</a>
+                </div>
+            </div>
 
-        <div
-            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition p-6 text-center">
-            <h2 class="text-xl font-semibold mb-2">📊 Data Structures</h2>
-            <p class="text-gray-600 mb-4">Arrays, Stacks, Queues & Linked Lists</p>
-            <a href="notes/data-structures.pdf" target="_blank"
-                class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg shadow">Download PDF</a>
-        </div>
+            <!-- Data Structures -->
+            <div class="bg-white rounded-xl shadow-lg p-5 hover:shadow-xl transition">
+                <h3 class="text-xl font-semibold mb-2">🗂 Data Structures</h3>
+                <iframe
+                    src="https://www.jsscacs.edu.in/sites/default/files/Department%20Files/Data%20Structures%20Full%20Notes.pdf"
+                    class="w-full h-48 mb-3 rounded-lg" loading="lazy"></iframe>
+                <div class="flex justify-center space-x-2">
+                    <a href="https://www.jsscacs.edu.in/sites/default/files/Department%20Files/Data%20Structures%20Full%20Notes.pdf"
+                        target="_blank" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">⬇
+                        Download</a>
+                    <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank"
+                        class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">🌐 GfG Notes</a>
+                </div>
+            </div>
 
-        <div
-            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition p-6 text-center">
-            <h2 class="text-xl font-semibold mb-2">🖥️ Operating System</h2>
-            <p class="text-gray-600 mb-4">Concepts, processes & memory management</p>
-            <a href="notes/os.pdf" target="_blank"
-                class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg shadow">Download PDF</a>
-        </div>
+            <!-- Computer Networks Unit 1 -->
+            <div class="bg-white rounded-xl shadow-lg p-5 hover:shadow-xl transition">
+                <h3 class="text-xl font-semibold mb-2">📡 Computer Networks – Unit 1</h3>
+                <iframe
+                    src="https://www.jsscacs.edu.in/sites/default/files/Department%20Files/Computer%20Networks%20Unit-1.pdf"
+                    class="w-full h-48 mb-3 rounded-lg" loading="lazy"></iframe>
+                <div class="flex justify-center space-x-2">
+                    <a href="https://www.jsscacs.edu.in/sites/default/files/Department%20Files/Computer%20Networks%20Unit-1.pdf"
+                        target="_blank" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">⬇
+                        Download</a>
+                    <a href="https://www.geeksforgeeks.org/computer-network-tutorials/" target="_blank"
+                        class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">🌐 GfG Notes</a>
+                </div>
+            </div>
 
-        <div
-            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition p-6 text-center">
-            <h2 class="text-xl font-semibold mb-2">💡 DBMS</h2>
-            <p class="text-gray-600 mb-4">Database Management Systems notes</p>
-            <a href="notes/dbms.pdf" target="_blank"
-                class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg shadow">Download PDF</a>
+            <!-- Computer Organization & Architecture -->
+            <div class="bg-white rounded-xl shadow-lg p-5 hover:shadow-xl transition">
+                <h3 class="text-xl font-semibold mb-2">🏗 Computer Organization & Architecture</h3>
+                <iframe src="https://media.geeksforgeeks.org/courses/syllabus/db29b4a6e537cb1a4c4a9119e1ca565f.pdf"
+                    class="w-full h-48 mb-3 rounded-lg" loading="lazy"></iframe>
+                <div class="flex justify-center space-x-2">
+                    <a href="https://media.geeksforgeeks.org/courses/syllabus/db29b4a6e537cb1a4c4a9119e1ca565f.pdf"
+                        target="_blank" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">⬇
+                        Download</a>
+                    <a href="https://www.geeksforgeeks.org/computer-organization-architecture-tutorials/"
+                        target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">🌐 GfG
+                        Notes</a>
+                </div>
+            </div>
         </div>
-
-        <div
-            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition p-6 text-center">
-            <h2 class="text-xl font-semibold mb-2">🌐 Networking</h2>
-            <p class="text-gray-600 mb-4">Computer networks & communication</p>
-            <a href="notes/networking.pdf" target="_blank"
-                class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg shadow">Download PDF</a>
-        </div>
-
-        <div
-            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition p-6 text-center">
-            <h2 class="text-xl font-semibold mb-2">⚡ Web Development</h2>
-            <p class="text-gray-600 mb-4">HTML, CSS, JavaScript basics</p>
-            <a href="notes/web-dev.pdf" target="_blank"
-                class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg shadow">Download PDF</a>
-        </div>
-    </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-indigo-600 text-white text-center py-4 mt-8">
-        <p>&copy; 2025 Iqsa Notes | Made for Students ❤️</p>
+    <footer class="bg-indigo-600 text-white text-center py-4">
+        <p>&copy; 2025 Iqsa | Created by Mohammed Sufiyan</p>
+        <p>Follow on Instagram: <a href="https://instagram.com/sufiiyn" class="underline">@sufiiyn</a></p>
     </footer>
 
 </body>
