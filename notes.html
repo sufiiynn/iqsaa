@@ -2,77 +2,127 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Free downloadable BCA notes for all semesters – Created by Mohammed Sufiyan for Iqsa Project" />
-    <meta name="author" content="Mohammed Sufiyan" />
-    <link rel="icon" href="favicon.png" />
-    <title>Notes | Iqsa – BCA Guidance</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iqsa - Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #4a90e2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .notes-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .note-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .note-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .note-card h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .note-card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .note-card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            background: #4a90e2;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+
+        .note-card a:hover {
+            background: #357abd;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <img src="favicon.png" alt="Iqsa Logo" class="logo" />
-        <h1 class="main-title">Iqsa - BCA Notes</h1>
-        <p class="tagline">Helping BCA students with guidance and success</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="notes.html" class="active">Notes</a>
-            <a href="about.html">About</a>
-        </nav>
+        <h1>📚 Student Notes</h1>
+        <p>Useful notes and study materials for JSSCACS students</p>
     </header>
 
-    <main>
-        <section class="notes-section">
-            <h2>📚 Download BCA Notes</h2>
-            <p>Semester-wise handwritten and PDF notes to boost your exam preparation.</p>
+    <div class="notes-container">
 
-            <div class="notes-card">
-                <h3>📖 Semester 1 Notes</h3>
-                <ul>
-                    <li>📄 <a href="#">Computer Fundamentals PDF</a></li>
-                    <li>📄 <a href="#">Programming in C Notes</a></li>
-                </ul>
-            </div>
+        <div class="note-card">
+            <h2>Computer Fundamentals</h2>
+            <p>Basics of computers, history, generations, hardware, software, OS, and more.</p>
+            <a href="https://drive.google.com/file/d/1k3ps0oRThNMc7dVtV8l3aP5XAf8A6u4S/view?usp=sharing"
+                target="_blank">Download PDF</a>
+        </div>
 
-            <div class="notes-card">
-                <h3>📖 Semester 2 Notes</h3>
-                <ul>
-                    <li>📄 <a href="#">Data Structures</a></li>
-                    <li>📄 <a href="https://www.slideshare.net/slideshow/ada-complete-notes/16014463">Discrete
-                            Mathematics</a></li>
-                </ul>
-            </div>
+        <div class="note-card">
+            <h2>Data Structures</h2>
+            <p>Arrays, linked lists, stacks, queues, sorting, searching, trees, graphs.</p>
+            <a href="https://drive.google.com/file/d/1cWdnRu0rbd8X8Uu8gXK0oN6CZmWc6eLf/view?usp=sharing"
+                target="_blank">Download PDF</a>
+        </div>
 
-            <div class="notes-card">
-                <h3>📖 Semester 3 Notes</h3>
-                <ul>
-                    <li>📄 <a href="#">Object-Oriented Programming</a></li>
-                    <li>📄 <a href="#">Operating Systems</a></li>
-                </ul>
-            </div>
+        <div class="note-card">
+            <h2>DBMS (Database Systems)</h2>
+            <p>Database concepts, ER models, normalization, SQL queries, transactions.</p>
+            <a href="https://drive.google.com/file/d/1t4VG0E5B3MZk89t6ENph1OtK_t2Q4n7P/view?usp=sharing"
+                target="_blank">Download PDF</a>
+        </div>
 
-            <div class="notes-card">
-                <h3>📖 Semester 4 Notes</h3>
-                <ul>
-                    <li>📄 <a href="#">Database Management Systems</a></li>
-                    <li>📄 <a href="#">Web Programming</a></li>
-                </ul>
-            </div>
+        <div class="note-card">
+            <h2>Java Programming</h2>
+            <p>OOP concepts, classes, objects, inheritance, polymorphism, GUI, JDBC.</p>
+            <a href="https://drive.google.com/file/d/1QbL3z_7jN4OZ7Sk6fhCq7Rx9HZFoZJ8N/view?usp=sharing"
+                target="_blank">Download PDF</a>
+        </div>
 
-            <p class="more-coming">📌 More semesters and topics coming soon!</p>
-        </section>
-    </main>
+        <div class="note-card">
+            <h2>Operating System</h2>
+            <p>Process management, memory management, scheduling, deadlocks, file systems.</p>
+            <a href="https://drive.google.com/file/d/1fK6DkDoWjBzqfXlwUgSgmktU6wLqlPcG/view?usp=sharing"
+                target="_blank">Download PDF</a>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 Iqsa | Created by Mohammed Sufiyan</p>
-        <p>Follow on Instagram: <a href="https://instagram.com/sufiiyn" target="_blank">@sufiiyn</a></p>
-    </footer>
+        <div class="note-card">
+            <h2>Software Engineering</h2>
+            <p>SDLC models, requirements, design, testing, project management.</p>
+            <a href="https://drive.google.com/file/d/1pYsnYw2uXw16V7I8QvfhX92XgFDfC3Lj/view?usp=sharing"
+                target="_blank">Download PDF</a>
+        </div>
 
-    <script src="script.js"></script>
+    </div>
 </body>
 
 </html>
