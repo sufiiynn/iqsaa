@@ -2,101 +2,138 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Free downloadable BCA notes for all semesters – Created by Mohammed Sufiyan for Iqsa Project" />
+    <meta name="author" content="Mohammed Sufiyan" />
+    <link rel="icon" href="favicon.png" />
     <title>Notes | Iqsa – BCA Guidance</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background: #4CAF50;
+            color: white;
+            padding: 15px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .notes-section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .notes-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: transform 0.2s;
+        }
+
+        .notes-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .notes-card h3 {
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #4CAF50;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #45a049;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
-
-    <!-- Header / Navigation -->
-    <header class="bg-indigo-600 text-white text-center py-6 shadow-md">
-        <img src="favicon.png" alt="Iqsa Logo" class="mx-auto mb-2 w-12 h-12">
-        <h1 class="text-3xl font-bold">Iqsa – BCA Notes</h1>
-        <p class="mt-1">Helping BCA students with guidance and success</p>
-        <nav class="mt-4 space-x-4">
-            <a href="index.html" class="hover:underline">Home</a>
-            <a href="projects.html" class="hover:underline">Projects</a>
-            <a href="notes.html" class="font-semibold underline">Notes</a>
-            <a href="about.html" class="hover:underline">About</a>
+<body>
+    <header>
+        <img src="favicon.png" alt="Iqsa Logo" class="logo" width="50" />
+        <h1 class="main-title">Iqsa - BCA Notes</h1>
+        <p class="tagline">Helping BCA students with guidance and success</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="notes.html" class="active">Notes</a>
+            <a href="about.html">About</a>
         </nav>
     </header>
 
-    <!-- Notes Section -->
-    <main class="max-w-6xl mx-auto p-6">
-        <h2 class="text-2xl font-semibold mb-4">📚 Preview & Download Notes</h2>
-        <p class="mb-6">Click a card to preview notes and access additional online resources from GeeksforGeeks.</p>
+    <main>
+        <section class="notes-section">
+            <h2>📚 Download BCA Notes</h2>
+            <p>Semester-wise genuine notes (PDFs) – Preview online or download directly.</p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Computer Fundamentals -->
-            <div class="bg-white rounded-xl shadow-lg p-5 hover:shadow-xl transition">
-                <h3 class="text-xl font-semibold mb-2">🖥 Computer Fundamentals (NEP)</h3>
-                <iframe src="https://jsscacs.edu.in/sites/default/files/Department%20Files/Computer%20Science.pdf"
-                    class="w-full h-48 mb-3 rounded-lg" loading="lazy"></iframe>
-                <div class="flex justify-center space-x-2">
-                    <a href="https://jsscacs.edu.in/sites/default/files/Department%20Files/Computer%20Science.pdf"
-                        target="_blank" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">⬇
-                        Download</a>
-                    <a href="https://www.geeksforgeeks.org/computer-science-fundamentals/computer-fundamentals-tutorial/"
-                        target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">🌐 GfG
-                        Notes</a>
-                </div>
+            <!-- Semester 1 -->
+            <div class="notes-card">
+                <h3>📖 Semester 1</h3>
+                <p><b>Computer Fundamentals</b></p>
+                <a href="unit 1 (BCA).pdf" target="_blank" class="btn">📂 View</a>
+                <a href="unit 1 (BCA).pdf" download class="btn">⬇ Download</a>
             </div>
 
-            <!-- Data Structures -->
-            <div class="bg-white rounded-xl shadow-lg p-5 hover:shadow-xl transition">
-                <h3 class="text-xl font-semibold mb-2">🗂 Data Structures</h3>
-                <iframe
-                    src="https://www.jsscacs.edu.in/sites/default/files/Department%20Files/Data%20Structures%20Full%20Notes.pdf"
-                    class="w-full h-48 mb-3 rounded-lg" loading="lazy"></iframe>
-                <div class="flex justify-center space-x-2">
-                    <a href="https://www.jsscacs.edu.in/sites/default/files/Department%20Files/Data%20Structures%20Full%20Notes.pdf"
-                        target="_blank" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">⬇
-                        Download</a>
-                    <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank"
-                        class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">🌐 GfG Notes</a>
-                </div>
+            <!-- Semester 2 -->
+            <div class="notes-card">
+                <h3>📖 Semester 2</h3>
+                <p><b>ADA (Unit III)</b></p>
+                <a href="ADA_Unit-III.pdf" target="_blank" class="btn">📂 View</a>
+                <a href="ADA_Unit-III.pdf" download class="btn">⬇ Download</a>
             </div>
 
-            <!-- Computer Networks Unit 1 -->
-            <div class="bg-white rounded-xl shadow-lg p-5 hover:shadow-xl transition">
-                <h3 class="text-xl font-semibold mb-2">📡 Computer Networks – Unit 1</h3>
-                <iframe
-                    src="https://www.jsscacs.edu.in/sites/default/files/Department%20Files/Computer%20Networks%20Unit-1.pdf"
-                    class="w-full h-48 mb-3 rounded-lg" loading="lazy"></iframe>
-                <div class="flex justify-center space-x-2">
-                    <a href="https://www.jsscacs.edu.in/sites/default/files/Department%20Files/Computer%20Networks%20Unit-1.pdf"
-                        target="_blank" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">⬇
-                        Download</a>
-                    <a href="https://www.geeksforgeeks.org/computer-network-tutorials/" target="_blank"
-                        class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">🌐 GfG Notes</a>
-                </div>
+            <!-- Semester 3 -->
+            <div class="notes-card">
+                <h3>📖 Semester 3</h3>
+                <p><b>Multimedia Animation (Unit 3)</b></p>
+                <a href="Unit 3 Multimedia Animation (1).pdf" target="_blank" class="btn">📂 View</a>
+                <a href="Unit 3 Multimedia Animation (1).pdf" download class="btn">⬇ Download</a>
             </div>
 
-            <!-- Computer Organization & Architecture -->
-            <div class="bg-white rounded-xl shadow-lg p-5 hover:shadow-xl transition">
-                <h3 class="text-xl font-semibold mb-2">🏗 Computer Organization & Architecture</h3>
-                <iframe src="https://media.geeksforgeeks.org/courses/syllabus/db29b4a6e537cb1a4c4a9119e1ca565f.pdf"
-                    class="w-full h-48 mb-3 rounded-lg" loading="lazy"></iframe>
-                <div class="flex justify-center space-x-2">
-                    <a href="https://media.geeksforgeeks.org/courses/syllabus/db29b4a6e537cb1a4c4a9119e1ca565f.pdf"
-                        target="_blank" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">⬇
-                        Download</a>
-                    <a href="https://www.geeksforgeeks.org/computer-organization-architecture-tutorials/"
-                        target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">🌐 GfG
-                        Notes</a>
-                </div>
+            <!-- Semester 4 -->
+            <div class="notes-card">
+                <h3>📖 Semester 4</h3>
+                <p><b>Unit 1 Notes</b></p>
+                <a href="4 th  Sem B C A Notes   unit  1-1.pdf" target="_blank" class="btn">📂 View</a>
+                <a href="4 th  Sem B C A Notes   unit  1-1.pdf" download class="btn">⬇ Download</a>
+
+                <p><b>Unit 2 Notes</b></p>
+                <a href="4 th Sem B C A Notes   units 2-1.pdf" target="_blank" class="btn">📂 View</a>
+                <a href="4 th Sem B C A Notes   units 2-1.pdf" download class="btn">⬇ Download</a>
             </div>
-        </div>
+
+            <p class="more-coming">📌 More notes coming soon… Stay updated!</p>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-indigo-600 text-white text-center py-4">
+    <footer>
         <p>&copy; 2025 Iqsa | Created by Mohammed Sufiyan</p>
-        <p>Follow on Instagram: <a href="https://instagram.com/sufiiyn" class="underline">@sufiiyn</a></p>
+        <p>Follow on Instagram: <a href="https://instagram.com/sufiiyn" target="_blank">@sufiiyn</a></p>
     </footer>
-
 </body>
 
 </html>
