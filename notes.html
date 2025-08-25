@@ -4,125 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iqsa - Notes</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background: #4a90e2;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        .notes-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .note-card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            transition: transform 0.2s ease-in-out;
-        }
-
-        .note-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .note-card h2 {
-            font-size: 18px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .note-card p {
-            font-size: 14px;
-            color: #666;
-        }
-
-        .note-card a {
-            display: inline-block;
-            margin-top: 10px;
-            text-decoration: none;
-            color: white;
-            background: #4a90e2;
-            padding: 8px 12px;
-            border-radius: 6px;
-            transition: background 0.3s;
-        }
-
-        .note-card a:hover {
-            background: #357abd;
-        }
-    </style>
+    <title>Student Notes | Iqsa</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <h1>📚 Student Notes</h1>
-        <p>Useful notes and study materials for JSSCACS students</p>
+<body class="bg-gradient-to-r from-blue-50 to-indigo-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="text-center py-6 bg-indigo-600 text-white shadow-lg">
+        <h1 class="text-3xl font-bold">📚 Study Notes</h1>
+        <p class="mt-2">Download useful notes for JSSCACS students</p>
     </header>
 
-    <div class="notes-container">
-
-        <div class="note-card">
-            <h2>Computer Fundamentals</h2>
-            <p>Basics of computers, history, generations, hardware, software, OS, and more.</p>
-            <a href="https://drive.google.com/file/d/1k3ps0oRThNMc7dVtV8l3aP5XAf8A6u4S/view?usp=sharing"
-                target="_blank">Download PDF</a>
-        </div>
-
-        <div class="note-card">
-            <h2>Data Structures</h2>
-            <p>Arrays, linked lists, stacks, queues, sorting, searching, trees, graphs.</p>
-            <a href="https://drive.google.com/file/d/1cWdnRu0rbd8X8Uu8gXK0oN6CZmWc6eLf/view?usp=sharing"
-                target="_blank">Download PDF</a>
-        </div>
-
-        <div class="note-card">
-            <h2>DBMS (Database Systems)</h2>
-            <p>Database concepts, ER models, normalization, SQL queries, transactions.</p>
-            <a href="https://drive.google.com/file/d/1t4VG0E5B3MZk89t6ENph1OtK_t2Q4n7P/view?usp=sharing"
-                target="_blank">Download PDF</a>
-        </div>
-
-        <div class="note-card">
-            <h2>Java Programming</h2>
-            <p>OOP concepts, classes, objects, inheritance, polymorphism, GUI, JDBC.</p>
-            <a href="https://drive.google.com/file/d/1QbL3z_7jN4OZ7Sk6fhCq7Rx9HZFoZJ8N/view?usp=sharing"
-                target="_blank">Download PDF</a>
-        </div>
-
-        <div class="note-card">
-            <h2>Operating System</h2>
-            <p>Process management, memory management, scheduling, deadlocks, file systems.</p>
-            <a href="https://drive.google.com/file/d/1fK6DkDoWjBzqfXlwUgSgmktU6wLqlPcG/view?usp=sharing"
-                target="_blank">Download PDF</a>
-        </div>
-
-        <div class="note-card">
-            <h2>Software Engineering</h2>
-            <p>SDLC models, requirements, design, testing, project management.</p>
-            <a href="https://drive.google.com/file/d/1pYsnYw2uXw16V7I8QvfhX92XgFDfC3Lj/view?usp=sharing"
-                target="_blank">Download PDF</a>
-        </div>
-
+    <!-- Search -->
+    <div class="max-w-xl mx-auto mt-6">
+        <input type="text" placeholder="Search subject..."
+            class="w-full px-4 py-2 rounded-lg shadow-md border focus:ring focus:ring-indigo-300">
     </div>
+
+    <!-- Notes Grid -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-8">
+        <!-- Card Example -->
+        <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition p-6 text-center">
+            <h2 class="text-xl font-semibold mb-2">💻 Computer Fundamentals</h2>
+            <p class="text-gray-600 mb-4">Basic concepts of computer science</p>
+            <a href="notes/computer-fundamentals.pdf" target="_blank"
+                class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg shadow">Download PDF</a>
+        </div>
+
+        <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition p-6 text-center">
+            <h2 class="text-xl font-semibold mb-2">📊 Data Structures</h2>
+            <p class="text-gray-600 mb-4">Arrays, Stacks, Queues & Linked Lists</p>
+            <a href="notes/data-structures.pdf" target="_blank"
+                class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg shadow">Download PDF</a>
+        </div>
+
+        <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition p-6 text-center">
+            <h2 class="text-xl font-semibold mb-2">🖥️ Operating System</h2>
+            <p class="text-gray-600 mb-4">Concepts, processes & memory management</p>
+            <a href="notes/os.pdf" target="_blank"
+                class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg shadow">Download PDF</a>
+        </div>
+
+        <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition p-6 text-center">
+            <h2 class="text-xl font-semibold mb-2">💡 DBMS</h2>
+            <p class="text-gray-600 mb-4">Database Management Systems notes</p>
+            <a href="notes/dbms.pdf" target="_blank"
+                class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg shadow">Download PDF</a>
+        </div>
+
+        <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition p-6 text-center">
+            <h2 class="text-xl font-semibold mb-2">🌐 Networking</h2>
+            <p class="text-gray-600 mb-4">Computer networks & communication</p>
+            <a href="notes/networking.pdf" target="_blank"
+                class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg shadow">Download PDF</a>
+        </div>
+
+        <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition p-6 text-center">
+            <h2 class="text-xl font-semibold mb-2">⚡ Web Development</h2>
+            <p class="text-gray-600 mb-4">HTML, CSS, JavaScript basics</p>
+            <a href="notes/web-dev.pdf" target="_blank"
+                class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg shadow">Download PDF</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-600 text-white text-center py-4 mt-8">
+        <p>&copy; 2025 Iqsa Notes | Made for Students ❤️</p>
+    </footer>
+
 </body>
 
 </html>
